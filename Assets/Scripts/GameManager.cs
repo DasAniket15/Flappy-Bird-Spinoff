@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOver;
 
     private int score;
-    public float getReadyTimer;
+    public float getReadyTimer = 2.5f;
 
 
     private void Awake()
@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
     public void Play()
     {
         score = 0;
-        scoreText.text = score.ToString();
 
         playButton.SetActive(false);
         gameOver.SetActive(false);
@@ -45,6 +44,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         player.enabled = true;
 
+        
         PipeMovement[] pipes = FindObjectsOfType<PipeMovement>();
 
         for (int i = 0; i < pipes.Length; i++)
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("Game Over!");
+        Debug.Log("Game Over! You are noob lol XD");
 
         gameOver.SetActive(true);
         playButton.SetActive(true);
@@ -85,7 +85,6 @@ public class GameManager : MonoBehaviour
     {
         yield return null;
         getReady.SetActive(true);
-
 
         yield return new WaitForSeconds(getReadyTimer);
         getReady.SetActive(false);

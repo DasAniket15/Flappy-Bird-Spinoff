@@ -18,6 +18,7 @@ public class PipeMovement : MonoBehaviour
         leftEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).x - 1f;
     }
 
+
     // Update is called once per frame
     void Update()
     {
