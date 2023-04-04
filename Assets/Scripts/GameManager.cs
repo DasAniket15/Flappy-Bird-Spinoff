@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     public void Play()
     {
         score = 0;
+        scoreText.text = score.ToString();
 
         playButton.SetActive(false);
         gameOver.SetActive(false);
