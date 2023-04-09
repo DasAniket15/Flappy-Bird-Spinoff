@@ -1,6 +1,6 @@
 # Flappy Bird Spin-Off
 
-> Mini project where I recreated the iconic mobile game "Flappy Bird", to learn parallax camera movement, character controls, UI controls, as well as setting up unlimited spawning and destruction of physics-based prefabs.
+> Mini project where I recreated the iconic mobile game "Flappy Bird", to learn parallax effect, character controls, UI controls, as well as setting up unlimited spawning and destruction of physics-based prefabs.
 
 - **Difficulty**: Beginner
 - **Topics**: Side Scrolling, Infinite Generation, Parallax
