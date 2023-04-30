@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private Player player;
     private PipeSpawner pipeSpawner;
 
+    public int frameRateTarget;
+
     public TMP_Text scoreText;
     public GameObject playButton;
     public GameObject getReady;
@@ -21,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = frameRateTarget;
 
         getReady.SetActive(true);
         gameOver.SetActive(false);
